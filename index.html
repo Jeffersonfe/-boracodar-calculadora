@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="calculator">
+        <div id="display">
+            <p id="last-calc" ></p>
+            <div id="result">
+                <img src="./assets/equals.svg" alt="igual">
+                <span id="result-final"></span>
+            </div>
+        </div>
+        <div id="keyboard">
+            <button onclick="clean()" class="secondary">CE</button>
+            <button onclick="back()" >C</button>
+            <button alt="Não Funcionando" ></button>
+            <button onclick="insert('/')" class="tertiary">/</button>
+            <button onclick="insert('7')">7</button>
+            <button onclick="insert('8')">8</button>
+            <button onclick="insert('9')">9</button>
+            <button onclick="insert('*')" class="tertiary">X</button>
+            <button onclick="insert('4')">4</button>
+            <button onclick="insert('5')">5</button>
+            <button onclick="insert('6')">6</button>
+            <button onclick="insert('-')" class="tertiary">-</button>
+            <button onclick="insert('1')">1</button>
+            <button onclick="insert('2')">2</button>
+            <button onclick="insert('3')">3</button>
+            <button onclick="insert('+')" class="tertiary">+</button>
+            <button onclick="alterar()">+/-</button>
+            <button onclick="insert('0')">0</button>
+            <button onclick="insert(',')">,</button>
+            <button onclick="calcular()" class="quartiary">=</button>
+        </div>
+    </div>
+</body>
+
+</html>
